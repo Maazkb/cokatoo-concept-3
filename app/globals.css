@@ -9,13 +9,13 @@
 
 body {
   font-family: var(--font-sans);
-  background: var(--color-cream);
-  color: #1c1917;
+  background: #f8fafc;
+  color: #0f172a;
 }
 
 ::selection {
-  background: #fef3c7;
-  color: #92400e;
+  background: #ccfbf1;
+  color: #0f766e;
 }
 
 * {

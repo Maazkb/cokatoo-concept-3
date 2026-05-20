@@ -507,62 +507,62 @@ function HeroSection() {
 }
 
 // ─── How It Works ─────────────────────────────────────────────────────────────
-function HowItWorksSection() {
-  return (
-    <section className="py-24 sm:py-32 bg-white px-5">
-      <div className="max-w-6xl mx-auto">
-        <Reveal className="text-center mb-16">
-          <SectionLabel>Simple as 1-2-3</SectionLabel>
-          <h2
-            className="text-4xl sm:text-5xl font-black text-stone-900"
-            style={{ fontFamily: "var(--font-fraunces)" }}
-          >
-            How Cokatoo works
-          </h2>
-          <p className="mt-4 text-stone-500 text-lg max-w-md mx-auto leading-relaxed">
-            Three friendly steps. Real connections. Products you love, brought by people who care.
-          </p>
-        </Reveal>
+// function HowItWorksSection() {
+//   return (
+//     <section className="py-24 sm:py-32 bg-white px-5">
+//       <div className="max-w-6xl mx-auto">
+//         <Reveal className="text-center mb-16">
+//           <SectionLabel>Simple as 1-2-3</SectionLabel>
+//           <h2
+//             className="text-4xl sm:text-5xl font-black text-stone-900"
+//             style={{ fontFamily: "var(--font-fraunces)" }}
+//           >
+//             How Cokatoo works
+//           </h2>
+//           <p className="mt-4 text-stone-500 text-lg max-w-md mx-auto leading-relaxed">
+//             Three friendly steps. Real connections. Products you love, brought by people who care.
+//           </p>
+//         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-          {steps.map((step, i) => (
-            <Reveal key={step.number} delay={i * 0.11}>
-              <motion.div
-                whileHover={{ y: -8, boxShadow: "0 24px 56px rgba(0,0,0,0.08)" }}
-                transition={{ type: "spring", stiffness: 280, damping: 20 }}
-                className="relative bg-amber-50 border border-amber-100 rounded-3xl p-8 cursor-default overflow-hidden group hover:bg-white transition-colors duration-300"
-              >
-                <span
-                  className="absolute -top-1 right-5 text-6xl font-black text-amber-200/80 leading-none select-none"
-                  style={{ fontFamily: "var(--font-fraunces)" }}
-                >
-                  {step.number}
-                </span>
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+//           {steps.map((step, i) => (
+//             <Reveal key={step.number} delay={i * 0.11}>
+//               <motion.div
+//                 whileHover={{ y: -8, boxShadow: "0 24px 56px rgba(0,0,0,0.08)" }}
+//                 transition={{ type: "spring", stiffness: 280, damping: 20 }}
+//                 className="relative bg-amber-50 border border-amber-100 rounded-3xl p-8 cursor-default overflow-hidden group hover:bg-white transition-colors duration-300"
+//               >
+//                 <span
+//                   className="absolute -top-1 right-5 text-6xl font-black text-amber-200/80 leading-none select-none"
+//                   style={{ fontFamily: "var(--font-fraunces)" }}
+//                 >
+//                   {step.number}
+//                 </span>
 
-                <div className="text-4xl mb-5">{step.emoji}</div>
+//                 <div className="text-4xl mb-5">{step.emoji}</div>
 
-                <h3
-                  className="text-xl font-bold text-stone-900 mb-3"
-                  style={{ fontFamily: "var(--font-fraunces)" }}
-                >
-                  {step.title}
-                </h3>
-                <p className="text-stone-500 leading-relaxed text-sm">{step.desc}</p>
+//                 <h3
+//                   className="text-xl font-bold text-stone-900 mb-3"
+//                   style={{ fontFamily: "var(--font-fraunces)" }}
+//                 >
+//                   {step.title}
+//                 </h3>
+//                 <p className="text-stone-500 leading-relaxed text-sm">{step.desc}</p>
 
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  whileHover={{ scaleX: 1 }}
-                  transition={{ duration: 0.3, ease }}
-                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-400 origin-left"
-                />
-              </motion.div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+//                 <motion.div
+//                   initial={{ scaleX: 0 }}
+//                   whileHover={{ scaleX: 1 }}
+//                   transition={{ duration: 0.3, ease }}
+//                   className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-400 origin-left"
+//                 />
+//               </motion.div>
+//             </Reveal>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 // ─── Community Stories ────────────────────────────────────────────────────────
 function CommunityStoriesSection() {
@@ -975,7 +975,7 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroSection />
-      <HowItWorksSection />
+      {/* <HowItWorksSection /> */}
       <CommunityStoriesSection />
       <LiveRequestsSection />
       <TrustSection />
